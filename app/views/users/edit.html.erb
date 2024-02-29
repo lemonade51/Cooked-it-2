@@ -23,8 +23,6 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-6">
-        <%= form_for @user do |f| %>
-          <div class="field">
 
         <%= form_for @user do |f| %>
           <div class="field">
@@ -44,7 +42,7 @@
 
           <div class="field">
             <%= f.label :profile_image, "プロフィール画像", class: "label" %>
-            <%= f.attachment_field :profile_image, class: "input" %>
+            <%= f.file_field :profile_image, class: "input" %>
           </div>
 
           <%= f.submit "更新", class: "button is-success" %>
